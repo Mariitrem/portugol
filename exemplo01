@@ -1,0 +1,12 @@
+programa {
+cadeia nome="Romario"
+inteiro idade=16
+cadeia cidade="Mafra"
+  funcao inicio() {
+    
+    escreva("Meu nome e ",nome,"\n")
+    escreva("Tenho ",idade," anos de idade.\n")
+    escreva("Atualmente resido na cidade de ",cidade,"\n"
+
+    }
+}
