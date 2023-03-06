@@ -1,0 +1,22 @@
+programa {
+  funcao inicio() {
+    
+     inteiro valor
+
+     escreva("qual tabuada você gostariade ver: \n")
+     leia(valor)
+
+      limpa()
+      escreva(valor, "x 01 = ", 1*valor, "\n")
+      escreva(valor, "x 01 = ", 1*valor, "\n")
+      escreva(valor * 3 "\n")
+      escreva(valor * 4 "\n"
+      escreva(valor * 5 "\n"
+      escreva(valor * 6 "\n"
+      escreva(valor * 7 "\n"
+             
+        8 "\n"
+      n1* 9 "\n"
+      n1* 10 "\n"
+  }
+}
