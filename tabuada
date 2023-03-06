@@ -8,15 +8,15 @@ programa {
 
       limpa()
       escreva(valor, "x 01 = ", 1*valor, "\n")
-      escreva(valor, "x 01 = ", 2*valor, "\n")
-      escreva(valor, "x 01 = ", 3*valor, "\n")
-      escreva(valor, "x 01 = ", 4*valor, "\n")
-      escreva(valor, "x 01 = ", 5*valor, "\n")
-      escreva(valor, "x 01 = ", 6*valor, "\n")
-      escreva(valor, "x 01 = ", 7*valor, "\n")
-      escreva(valor, "x 01 = ", 8*valor, "\n")
-      escreva(valor, "x 01 = ", 9*valor, "\n")
-      escreva(valor, "x 01 = ", 10*valor, "\n")
+      escreva(valor, "x 02 = ", 2*valor, "\n")
+      escreva(valor, "x 03 = ", 3*valor, "\n")
+      escreva(valor, "x 04 = ", 4*valor, "\n")
+      escreva(valor, "x 05 = ", 5*valor, "\n")
+      escreva(valor, "x 06 = ", 6*valor, "\n")
+      escreva(valor, "x 07 = ", 7*valor, "\n")
+      escreva(valor, "x 08 = ", 8*valor, "\n")
+      escreva(valor, "x 09 = ", 9*valor, "\n")
+      escreva(valor, "x 10 = ", 10*valor, "\n")
              
         
   }
