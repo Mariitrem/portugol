@@ -2,27 +2,25 @@ programa {
   
    inclua biblioteca Util
   
-   cadeia Opcao, nome_cliente
+   cadeia opcao, nome_cliente
     inteiro idade
   
   funcao inicio() {
     
-    cadeia Opcao, nome_cliente
-    inteiro idade
-
+    limpa()
     escreva(".__________________________________________________________.\n")
     escreva("|                   SISTEMA DE CADASTRO                    |\n")
     escreva(".__________________________________________________________.\n")
 
     escreva("1 - cadastro novo cliente\n")
-    escreva("2 -visualizar clientes cadastrados\n")
+    escreva("2 - visualizar clientes cadastrados\n")
     escreva("3 - sair do sistema\n")
     
     escreva(".__________________________________________________________.\n")
-    escreva("Opição desejada:\n")
-    leia(Opcao)
+    escreva("Opção desejada:\n")
+    leia(opcao)
 
-    escolha(Opcao)
+    escolha(opcao)
     {
        caso "1":
        {
@@ -59,8 +57,38 @@ programa {
          inicio()
 
          pare
+        
+        }
 
+      caso "3"
+      {
+           limpa()
+           escreva("Saindo do sistema em 05 segundos . . .")
+           Util.aguarde(1000)
 
+           limpa()
+           escreva("Saindo do sistema em 04 segundos . . .")
+           Util.aguarde(1000)
+
+           limpa()
+           escreva("Saindo do sistema em 03 segundos . . .")
+           Util.aguarde(1000)
+
+           limpa()
+           escreva("Saindo do sistema em 02 segundos . . .")
+           Util.aguarde(1000)
+
+           limpa()
+           escreva("Saindo do sistema em 01 segundos . . .")
+           Util.aguarde(1000)
+
+           limpa()
+           escreva("Ate a proxima!!!\n\n\n")
+           
+
+          pare
+
+      }
       }
     }
   }
