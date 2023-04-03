@@ -1,7 +1,6 @@
 programa {
-  
-   inclua biblioteca Util
-  
+
+    inclua biblioteca Util
     inteiro opção, idade[8], quant = 0, n 
     cadeia nome_completo[8]
   
@@ -26,11 +25,11 @@ programa {
        {
           limpa()
           escreva("informe o nome do cliente:\n")
-          leia(nome_cliente)
+          leia(nome_completo[quant])
 
           limpa()
-          escreva("qual a idade do(a) cliente ", nome_cliente, ":\n")
-          leia(idade)
+          escreva("qual a idade do(a) cliente ", nome_completo[quant], ":\n")
+          leia(idade[quant])
 
           limpa()
           //exibe mensagem de usuario cadastrado com sucesso
@@ -50,12 +49,13 @@ programa {
          escreva("|                  CLIENTES CADASTRADOS                    |\n")
          escreva(".__________________________________________________________.\n")
 
-         escreva("Nº 01 - ", nome_cliente, " - idade: ", idade,"\n")
-        
+        para(n = 0; n < quant; n++)
+        {
+         escreva("Nº 01 - ", nome_completo[n], " - idade: ", idade[n],"\n")
+        }
          escreva(".__________________________________________________________.\n")
          Util.aguarde(3000) //aguarde 05 segundos
          inicio()
-
          pare
         
         }
