@@ -1,7 +1,7 @@
 programa {
 
     inclua biblioteca Util
-    inteiro opção, idade[8], quant = 0, n 
+    inteiro opcao, idade[8], quant = 0, n 
     cadeia nome_completo[8]
   
   funcao inicio() {
@@ -21,7 +21,7 @@ programa {
 
     escolha(opcao)
     {
-       caso "1":
+       caso 1:
        {
           limpa()
           escreva("informe o nome do cliente:\n")
@@ -36,13 +36,15 @@ programa {
           escreva("AVISO: Usuario cadastrado com sucesso!!!")
           Util.aguarde(3000)
 
+          quant++
+
           //retornar para o inicio 
           inicio()
           pare
 
        }
   
-      caso "2":
+      caso 2:
       {
         limpa()
          escreva(".__________________________________________________________.\n")
@@ -54,13 +56,13 @@ programa {
          escreva("Nº 01 - ", nome_completo[n], " - idade: ", idade[n],"\n")
         }
          escreva(".__________________________________________________________.\n")
-         Util.aguarde(3000) //aguarde 05 segundos
+         Util.aguarde(3000) //aguarde 03 segundos
          inicio()
          pare
         
         }
 
-      caso "3"
+      caso 3:
       {
            limpa()
            escreva("Saindo do sistema em 05 segundos . . .")
