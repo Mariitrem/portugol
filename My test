@@ -1,0 +1,110 @@
+programa {
+
+    inclua biblioteca Util
+    inteiro opcao, idade[8], quant = 0, n 
+    cadeia nome_completo[8]
+  
+  funcao inicio() {
+    
+    limpa()
+    escreva(".__________________________________________________________.\n")
+    escreva("|                   SISTEMA DE CADASTRO                    |\n")
+    escreva(".__________________________________________________________.\n")
+
+    escreva("1 - cadastro novo cliente\n")
+    escreva("2 - visualizar clientes cadastrados\n")
+    escreva("3 - escreva o nome da pessoa a ser buscada:\n")
+    escreva("4 - sair do sistema\n")
+    
+    escreva(".__________________________________________________________.\n")
+    escreva("Opção desejada:\n")
+    leia(opcao)
+
+    escolha(opcao)
+    {
+       caso 1:
+       {
+          limpa()
+          escreva("informe o nome do cliente:\n")
+          leia(nome_completo[quant])
+
+          limpa()
+          escreva("qual a idade do(a) cliente ", nome_completo[quant], ":\n")
+          leia(idade[quant])
+
+          limpa()
+          //exibe mensagem de usuario cadastrado com sucesso
+          escreva("AVISO: Usuario cadastrado com sucesso!!!")
+          Util.aguarde(1000)
+
+          quant++
+
+          //retornar para o inicio 
+          inicio()
+          pare
+
+       }
+  
+      caso 2:
+      {
+        limpa()
+         escreva(".__________________________________________________________.\n")
+         escreva("|                  CLIENTES CADASTRADOS                    |\n")
+         escreva(".__________________________________________________________.\n")
+
+        para(n = 0; n < quant; n++)
+        {
+         escreva("Nº 01 - ", nome_completo[n], " - idade: ", idade[n],"\n")
+        }
+         escreva(".__________________________________________________________.\n")
+         Util.aguarde(3000) //aguarde 03 segundos
+         inicio()
+         pare
+        
+        }
+
+      caso 3:
+      {
+         limpa()
+         escreva("informe o nome do cliente a ser buscado\n")
+         leia(nome [quant])
+
+         {
+          para(n = 0; n < quant; n++)
+         }
+        
+      }
+
+      caso 4:
+      {
+           limpa()
+           escreva("Saindo do sistema em 05 segundos . . .")
+           Util.aguarde(1000)
+
+           limpa()
+           escreva("Saindo do sistema em 04 segundos . . .")
+           Util.aguarde(1000)
+
+           limpa()
+           escreva("Saindo do sistema em 03 segundos . . .")
+           Util.aguarde(1000)
+
+           limpa()
+           escreva("Saindo do sistema em 02 segundos . . .")
+           Util.aguarde(1000)
+
+           limpa()
+           escreva("Saindo do sistema em 01 segundos . . .")
+           Util.aguarde(1000)
+
+           limpa()
+           escreva("Ate a proxima!!!\n\n\n")
+           
+
+          pare
+
+      }
+      }
+    }
+  }
+}
