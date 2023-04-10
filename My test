@@ -13,7 +13,7 @@ programa {
 
     escreva("1 - cadastro novo cliente\n")
     escreva("2 - visualizar clientes cadastrados\n")
-    escreva("3 - escreva o nome da pessoa a ser buscada:\n")
+    escreva("3 - escreva o nome da pessoa a ser buscado\n")
     escreva("4 - sair do sistema\n")
     
     escreva(".__________________________________________________________.\n")
@@ -66,12 +66,25 @@ programa {
       caso 3:
       {
          limpa()
-         escreva("informe o nome do cliente a ser buscado\n")
-         leia(nome [quant])
+         escreva("informe o nome do cliente a ser buscado:\n")
+         leia(pesquisa)
 
-         {
-          para(n = 0; n < quant; n++)
-         }
+         para(n=0; n < quant; n++)
+        {
+            se(nome_completo[nome_completo]==pesquisa)
+          {
+              achei = 1
+              escreva("Usuario(a)", nome_completo[n], "com idade", idade[n], "encontrado na posição ", n+1,"\n" )
+          }
+        }
+
+        se(achei == 0)
+        {
+          escreva("ATENÇAO: nenhum usuario foi encontrado")
+        }
+
+        escreva("\n\n_____________________________________________________\n\n")
+        Util.aguarde(3000)
         
       }
 
@@ -107,4 +120,4 @@ programa {
       }
     }
   }
-}
+}  
