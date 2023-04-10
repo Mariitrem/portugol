@@ -62,30 +62,41 @@ programa {
          pare
         
         }
+        CASO 3 
+         {
+        limpa()
+        achei = 0 //reseto a variável achei para limpar a pesquisa e funcionalidades
+        escreva("Escreva o nome de quem você deseja buscar:\n")
+        leia(termo)
+        limpa()
 
-      caso 3:
-      {
-         limpa()
-         escreva("informe o nome do cliente a ser buscado:\n")
-         leia(pesquisa)
+        escreva("***************************************\n")
+        escreva("         RESULTADO DA PESQUISA     \n")
+        escreva("***************************************\n")
+        
 
-         para(n=0; n < quant; n++)
-        {
-            se(nome_completo[nome_completo]==pesquisa)
+
+        para(n = 0; n < quant; n++)
+        { 
+          se(nome_cliente[n] == termo)
           {
-              achei = 1
-              escreva("Usuario(a)", nome_completo[n], "com idade", idade[n], "encontrado na posição ", n+1,"\n" )
+            achei = 1
+            escreva("O ", nome_cliente[n], " está na posição ",  n+1)
           }
+
         }
 
         se(achei == 0)
         {
-          escreva("ATENÇAO: nenhum usuario foi encontrado")
+          limpa()
+          escreva("ATENÇÃO! Nenhum usuário foi encontrado na base de dados!")
         }
 
-        escreva("\n\n_____________________________________________________\n\n")
-        Util.aguarde(3000)
-        
+        escreva("\n\n********************************************\n\n")
+        Util.aguarde(3000) //aguarde 05 segundos
+        inicio()
+        pare
+
       }
 
       caso 4:
