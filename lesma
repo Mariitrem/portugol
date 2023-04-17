@@ -1,0 +1,26 @@
+programa {
+  
+  inteiro altura, valor
+
+  funcao inicio() {
+    
+    escreva ("Qual a altura do muro\n")
+    leia (altura)
+
+
+    se(altura == 1)
+    {
+    escreva("ela subir em 1 dia")
+    }
+
+   se(altura == 2)
+    {
+    escreva("ela subir em 1 dia")
+  }
+   se(altura == 3)
+    {
+    escreva("ela subir em 1 dia")
+   }
+
+  }
+}
